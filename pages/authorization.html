@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Authorization</title>
+</head>
+
+<body>
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="post">
+    <fieldset>
+      <legend>Authorization form</legend>
+
+      <!-- Блок логина -->
+      <div>
+        <label for="lgn">Login</label>
+        <input type="email" name="login" id="lgn" placeholder="enter login" autocomplete="email" required>
+      </div>
+
+      <!-- Блок пароля -->
+      <div>
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" placeholder="enter password" required
+          autocomplete="current-password" minlength="8" maxlength="20">
+      </div>
+
+      <!-- Блок кнопок -->
+      <div>
+        <label for="rempass">Remember pass</label>
+        <input type="checkbox" name="rempass" id="rempass">
+      </div>
+
+      <div>
+        <button type="submit">Enter</button>
+      </div>
+
+    </fieldset>
+
+  </form>
+
+  <!-- Переход -->
+  <a href="../index.html">Back to Main page</a>
+
+</body>
+
+</html>
