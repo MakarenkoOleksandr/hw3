@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+</head>
+
+<body>
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="post">
+    <fieldset>
+      <legend>Registration form</legend>
+
+      <!-- Блок логина -->
+      <div>
+        <label for="lgn">Login</label>
+        <input type="email" name="login" id="lgn" placeholder="your email" autocomplete="email" required>
+      </div>
+
+      <!-- Блок пароля -->
+      <div>
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" placeholder="password" autocomplete="new-password" required
+          minlength="8" maxlength="20">
+      </div>
+
+      <!-- Блок подтв пароля -->
+      <div>
+        <label for="cpass">Confirm password</label>
+        <input type="password" name="cpass" id="cpass" placeholder="confirm password" autocomplete="new-password"
+          required minlength="8" maxlength="20">
+      </div>
+    </fieldset>
+
+    <!-- Блок кнопок -->
+    <div>
+      <button type="submit">Registration</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+
+  <p>If u already have an account - please use <a href="authorization.html">Authorization</a> form</p>
+
+  <!-- Переход -->
+  <a href="../index.html">Back to Main page</a>
+
+</body>
+
+</html>
