@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Find Vechile</title>
+</head>
+
+<body>
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="get">
+    <fieldset>
+      <legend>Choose options</legend>
+
+      <!-- Тип кузова -->
+      <div>
+        <label for="vlist">Vechile type</label>
+        <select name="vlist" id="vlist">
+          <option value="" selected disabled>Brand</option>
+          <option>Sedan</option>
+          <option>Crossover</option>
+          <option>Jeep</option>
+        </select>
+      </div>
+
+      <!-- Марка -->
+      <div>
+        <label for="mod">Model</label>
+        <select name="mod" id="mod">
+          <option value="" selected disabled>Model</option>
+          <option>Chevrolet</option>
+          <option>Honda</option>
+          <option>Mazda</option>
+        </select>
+      </div>
+
+      <!-- Страна производителя -->
+      <div>
+        <label for="state">Country build</label>
+        <select name="state" id="state">
+          <option value="" selected disabled>Country build</option>
+          <option>USA</option>
+          <option>Japan</option>
+          <option>Korea</option>
+        </select>
+      </div>
+
+      <!-- Цена -->
+      <div>
+        <label for="pfr">Price from</label>
+        <input type="number" name="pfr" id="pfr" placeholder="From" min="1">
+        <label for="pto">Price to</label>
+        <input type="number" name="pto" id="pto" placeholder="To" max="250000">
+      </div>
+
+      <!-- Год выпуска -->
+      <div>
+        <label for="yobf">YOB From</label>
+        <select name="yobf" id="yobf">
+          <option value="" selected disabled>From</option>
+          <option>2011</option>
+          <option>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+        </select>
+
+        <label for="yobto">YOB to</label>
+        <select name="yobto" id="yobto">
+          <option value="" selected disabled>To</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+        </select>
+      </div>
+
+      <!-- Состояние -->
+      <div>
+        <label for="cond">Condition</label>
+        <select name="cond" id="cond" multiple>
+          <option value="" selected disabled>Condition</option>
+          <option>New</option>
+          <option>Second hand</option>
+          <option>Damaged</option>
+          <option>Not damaged</option>
+          <option>Loan</option>
+        </select>
+      </div>
+
+      <!-- Тип топлива -->
+      <div>
+        <label for="ft">Fuel type</label>
+        <select name="ft" id="ft" multiple>
+          <option value="" selected disabled>Fuel type</option>
+          <option>Patrol</option>
+          <option>Diesel</option>
+          <option>Hybryd</option>
+          <option>Gas</option>
+          <option>Electrical</option>
+        </select>
+      </div>
+
+      <!-- КПП -->
+      <div>
+        <label for="trans">Transmission</label>
+        <select name="trans" id="trans">
+          <option value="" selected disabled>Transmission</option>
+          <option>Manual</option>
+          <option>Auto</option>
+          <option>Variator</option>
+          <option>Tiptronic</option>
+          <option>Robot</option>
+        </select>
+      </div>
+
+      <!-- Цвет -->
+      <div>
+        <label for="col">Colour</label>
+        <select name="col" id="col" multiple>
+          <option value="" selected disabled>Colour</option>
+          <option>Black</option>
+          <option>Yellow</option>
+          <option>Blue</option>
+          <option>Green</option>
+          <option>White</option>
+        </select>
+      </div>
+
+      <!-- Доп опции -->
+      <div>
+        <label for="co">Comfort options</label>
+        <select name="co" id="co" multiple>
+          <option value="" selected disabled>Comfort options</option>
+          <option>Leather seats</option>
+          <option>Premium multimedia</option>
+          <option>Start engine button</option>
+          <option>Heat seats</option>
+          <option>Sets save memory</option>
+        </select>
+      </div>
+
+    </fieldset>
+
+    <!-- Кнопка -->
+    <div>
+      <button type="submit">Search</button>
+    </div>
+
+  </form>
+
+  <!-- Переход -->
+  <a href="../index.html">Back to Main page</a>
+
+</body>
+
+</html>
